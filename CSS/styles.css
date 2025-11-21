@@ -1,26 +1,34 @@
+/* poppins-300 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 300;
-  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'); /
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* poppins-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* poppins-600 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* poppins-900 - latin */
 @font-face {
-  font-display: swap; 
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 900;
-  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --color-primary-dark: #31261a;
@@ -32,12 +40,27 @@
 
 /* global style */
 
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0%;
 }
 ul {
   list-style: none;
@@ -45,6 +68,40 @@ ul {
 
 address {
   font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* section main */
+
+.section {
+  padding: 48px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0px auto;
+  padding: 0px 24px;
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+  line-height: 1.3;
+  font-size: 64px;
+  font-weight: 900;
+}
+.section-title .accent {
+  color: var(--color-brand-dark);
 }
 
 /* button */
@@ -56,6 +113,7 @@ address {
   border: 2px solid var(--color-brand-light);
   cursor: pointer;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -77,11 +135,16 @@ address {
 
 /* hero */
 
+.hero-section {
+  padding: 272px 0px;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
@@ -95,20 +158,15 @@ address {
   color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
+  padding: 0px 0px;
   /* text-align: center ; */
 }
 
-/* upper section */
-
-.section-title {
-  color: var(--color-primary-dark);
-  line-height: 1.3;
-  font-size: 64px;
-  font-weight: 900;
-}
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
+/* .advantages-text {
+  display: inline-block;
+  padding: 16px 0px;
+  padding-right: 160px;
+} */
 
 /* traditions-section */
 
@@ -123,19 +181,30 @@ address {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-title {
+  margin-bottom: 42px;
+}
 
 /* chefs-section */
 
+.chefs-main-title {
+  margin-bottom: 80px;
+}
 .chefs-title {
   color: var(--color-primary-dark);
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
-/* formats-titl */
+/* formats-title */
 
 .formats-title {
   color: var(--color-primary-light);
+
   font-size: 24px;
   font-weight: 600;
 }
@@ -144,6 +213,16 @@ address {
   color: var(--color-primary-light);
   font-size: 14px;
   font-weight: 300;
+}
+
+.formats-main-title {
+  margin-bottom: 80px;
+}
+
+/* contacts-section */
+
+.contacts-section {
+  margin-bottom: 16px;
 }
 
 /* address-link */
