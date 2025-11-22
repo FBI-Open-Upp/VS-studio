@@ -1,4 +1,3 @@
-/* poppins-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
@@ -6,7 +5,6 @@
   font-weight: 300;
   src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
@@ -14,7 +12,6 @@
   font-weight: 400;
   src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* poppins-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
@@ -22,7 +19,6 @@
   font-weight: 600;
   src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* poppins-900 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Poppins';
@@ -30,6 +26,9 @@
   font-weight: 900;
   src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* color variables */
+
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -64,6 +63,8 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 address {
@@ -130,7 +131,33 @@ address {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/* header */
+.header {
+  background-color: gray;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-item {
+  margin-right: 64px;
 }
 
 /* hero */
@@ -153,24 +180,28 @@ address {
 
 /* advantages */
 
-.advantages-list {
+.advantages-section {
   background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+  padding: 16px 0px;
+}
+
+.advantages-list {
   font-size: 20px;
   font-weight: 300;
   padding: 0px 0px;
   /* text-align: center ; */
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-/* .advantages-text {
-  display: inline-block;
-  padding: 16px 0px;
-  padding-right: 160px;
-} */
+.advantages-item {
+  color: var(--color-primary-light);
+}
 
 /* traditions-section */
 
-.traditions-text .brand-uppercase {
+.traditions-text .uppercase {
   text-transform: uppercase;
   color: var(--color-brand-light);
   font-weight: 600;
@@ -181,11 +212,27 @@ address {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+
+.traditions-text.limeted {
+  max-width: 335px;
+}
+
 .traditions-section {
   padding-top: 96px;
 }
+
 .traditions-title {
   margin-bottom: 42px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
 }
 
 /* chefs-section */
@@ -200,23 +247,39 @@ address {
   font-weight: 600;
 }
 
-/* formats-title */
+/* formats-sections */
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
 
 .formats-title {
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
 
   font-size: 24px;
   font-weight: 600;
 }
 
 .formats-text {
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
   font-size: 14px;
   font-weight: 300;
 }
 
 .formats-main-title {
   margin-bottom: 80px;
+}
+
+.format-card {
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 16px;
+  padding: 24px;
 }
 
 /* contacts-section */
