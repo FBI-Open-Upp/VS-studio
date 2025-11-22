@@ -35,6 +35,7 @@
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
   --color-brand-brown: #a18268;
+  --color-brand-w-y: #cfcfbc;
 }
 
 /* global style */
@@ -54,6 +55,7 @@ p {
 }
 
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: poppins, sans-serif;
   font-size: 18px;
@@ -101,6 +103,11 @@ address {
   font-size: 64px;
   font-weight: 900;
 }
+
+.section-title.centered {
+  text-align: center;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
 }
@@ -135,7 +142,7 @@ address {
 
 /* header */
 .header {
-  background-color: gray;
+  background-color: gray; /* Remove  */
 }
 .header-container {
   display: flex;
@@ -164,6 +171,16 @@ address {
 
 .hero-section {
   padding: 272px 0px;
+  background-image: url('../images/hero-bkg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* background-image: linear-gradient(
+    102.76deg,
+    rgba(18, 18, 17, 0.78) 2.03%,
+    rgba(18, 18, 17, 0.6) 58.46%,
+    rgba(18, 18, 17, 0) 90.36%
+  ); */
 }
 
 .hero-title {
@@ -238,13 +255,36 @@ address {
 /* chefs-section */
 
 .chefs-main-title {
+  max-width: 520px;
   margin-bottom: 80px;
+  margin: 0 auto 80px;
 }
+
+.chefs-main-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-w-y);
+  content: '';
+}
+
+.chefs-main-title::before {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-w-y);
+  content: '';
+}
+
 .chefs-title {
   color: var(--color-primary-dark);
   margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-brand-brown);
 }
 
 /* formats-sections */
@@ -277,6 +317,7 @@ address {
 }
 
 .format-card {
+  height: 444px;
   border: 1px solid var(--color-primary-dark);
   border-radius: 16px;
   padding: 24px;
@@ -308,4 +349,14 @@ address {
   font-weight: 300;
   color: var(--color-brand-brown);
   text-decoration: none;
+}
+
+/* foooter */
+
+.footer-section {
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-bkg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
