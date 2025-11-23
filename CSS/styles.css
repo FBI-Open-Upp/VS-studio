@@ -39,8 +39,10 @@
 }
 
 /* global style */
-
-* {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -52,6 +54,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 body {
@@ -274,6 +280,29 @@ address {
   content: '';
 }
 
+.chef-text p {
+  margin-bottom: 32px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0px;
+}
+
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chefs-card {
+  display: flex;
+  gap: 30px;
+}
+
 .chefs-title {
   color: var(--color-primary-dark);
   margin-bottom: 16px;
@@ -316,6 +345,12 @@ address {
   margin-bottom: 80px;
 }
 
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .format-card {
   height: 444px;
   border: 1px solid var(--color-primary-dark);
@@ -341,6 +376,7 @@ address {
   padding: 0px;
   border: 1px solid var(--color-primary-dark);
   fill: var(--color-primary-dark);
+  flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -350,11 +386,62 @@ address {
 
 /* contacts-section */
 
-.contacts-section {
+.contacts-title {
   margin-bottom: 16px;
 }
 
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-form {
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
+
+/* foooter */
+
+.footer-section {
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-bkg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 32px 0px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
 /* address-link */
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+  gap: 20px;
+}
 
 .address-link {
   color: var(--color-primary-light);
@@ -369,28 +456,20 @@ address {
 }
 
 .address-copyright-text {
-  color: var(--color-primary-light);
   font-size: 14px;
   font-weight: 300;
   color: var(--color-brand-brown);
   text-decoration: none;
 }
 
-.addres-icon {
+.address-icon {
   fill: var(--color-primary-light);
   cursor: pointer;
 }
 
-.addres-icon:hover {
+.address-icon:hover {
   fill: var(--color-brand-light);
 }
 
-/* foooter */
-
-.footer-section {
-  background-color: var(--color-primary-dark);
-  background-image: url('../images/footer-bkg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.address-info {
 }
