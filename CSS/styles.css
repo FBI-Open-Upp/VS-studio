@@ -548,13 +548,16 @@ address {
   background-color: var(--color-primary-light);
   border-radius: 32px;
   position: relative;
+  padding: 128px;
+  padding-bottom: 0;
+  overflow-y: auto;
 }
 
-.beackdrop.is-hidden {
+/* .beackdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .modal-btn-close {
   width: 32px;
@@ -562,4 +565,57 @@ address {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* form */
+
+.form-label {
+  position: absolute;
+  left: 42px;
+  top: 16px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-brand-brown);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-light);
+  outline: none;
+}
+
+.form-field {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.form-input::placeholder {
+  color: var(--color-brand-brown);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.forms-term {
+  max-width: 210px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.forms-term-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
