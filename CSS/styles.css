@@ -125,16 +125,27 @@ address {
   background-color: var(--color-brand-light);
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
-  cursor: pointer;
   font-weight: 600;
   padding: 16px 32px;
   transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: var(--color-primary-light);
   color: var(--color-brand-dark);
 }
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+/* .button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
 
 /* link */
 
@@ -553,11 +564,11 @@ address {
   overflow-y: auto;
 }
 
-/* .beackdrop.is-hidden {
+.beackdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .modal-btn-close {
   width: 32px;
@@ -619,3 +630,37 @@ address {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+
+/* Настройка вида CheckBox */
+
+/* .checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: green;                           
+}
+
+.checkbox-label {
+  padding-left: 25px;
+}
+
+.checkbox-label::before {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  content: '';
+  border: solid var(--color-primary-dark) 2px;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  border-radius: 2px;
+} */
+
+/* .checkbox-input:checked + .checkbox-label::before {
+  background-color: green;                           
+  } вместо цвета можно добавить картинку аля bkg-image: url('') */
