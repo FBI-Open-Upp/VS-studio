@@ -12,7 +12,7 @@
       rel="stylesheet"
     /> -->
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -147,6 +147,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/walrus.jpg"
+                    alt="фоновое зображення Walrus"
+                  />
                   <h3 lang="en" , class="formats-title">Walrus</h3>
                   <div class="formats-text">
                     <p>Площа: до 120 м2</p>
@@ -155,12 +160,17 @@
                       Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
                       офіціанти-різнороби
                     </p>
-                    <p>Посадкові місця:є</p>
+                    <p>Посадкові місця: є</p>
                   </div>
                 </article>
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe.jpg"
+                    alt="фоновое зображення Horseshoe"
+                  />
                   <h3 lang="en" , class="formats-title">Horseshoe</h3>
                   <div class="formats-text">
                     <p>Площа: до 15 м2</p>
@@ -172,6 +182,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar.jpg"
+                    alt="фоновое зображення Handlebar "
+                  />
                   <h3 lang="en" , class="formats-title">Handlebar</h3>
                   <div class="formats-text">
                     <p>Площа: до 15 м2</p>
@@ -203,6 +218,7 @@
                   >Ім’я
                 </label>
                 <input
+                  required
                   class="form-input"
                   type="text"
                   id="user-name"
@@ -215,11 +231,14 @@
                   >Телефон
                 </label>
                 <input
+                  required
                   class="form-input"
                   type="tel"
                   name="user-tel"
                   id="user-tel"
                   placeholder="Телефон"
+                  pattern="^\+[0-9]{12}"
+                  maxlength="13"
                 />
               </div>
               <div class="form-field">
@@ -227,6 +246,7 @@
                   >Електронна пошта
                 </label>
                 <input
+                  required
                   class="form-input"
                   type="email"
                   name="user-email"
@@ -319,7 +339,7 @@
         </address>
       </div>
     </footer>
-    <div class="beackdrop">
+    <div class="beackdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>

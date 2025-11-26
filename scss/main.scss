@@ -1,0 +1,66 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+
+@import './_base.scss';
+
+@import './components/buttons';
+@import './components/links';
+
+@import './components/header';
+
+@import './components/hero-section';
+
+@import './components/advantage-section';
+
+@import './components/traditions-section';
+
+@import './components/chefs-section';
+
+@import './components/formats-section';
+
+@import './components/carousel';
+
+@import './components/contacts-section';
+
+@import './components/footer-section';
+
+@import './components/address-link';
+
+@import './components/modals';
+
+@import './components/forms';
+
+/* Настройка вида CheckBox */
+
+/* .checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: green;                           
+}
+
+.checkbox-label {
+  padding-left: 25px;
+}
+
+.checkbox-label::before {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  content: '';
+  border: solid var(--color-primary-dark) 2px;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  border-radius: 2px;
+} */
+
+/* .checkbox-input:checked + .checkbox-label::before {
+  background-color: green;                           
+  } вместо цвета можно добавить картинку аля bkg-image: url('') */

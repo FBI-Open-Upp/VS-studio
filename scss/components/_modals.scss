@@ -1,0 +1,40 @@
+.beackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #31261a66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+  max-width: 880px;
+  max-height: 880px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  position: relative;
+  padding: 128px;
+  padding-bottom: 0;
+  overflow-y: auto;
+}
+
+.beackdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
