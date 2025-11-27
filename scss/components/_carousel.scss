@@ -12,13 +12,13 @@
   fill: var(--color-primary-dark);
   flex-shrink: 0;
   transition: color 0.3s, background-color 0.3s;
-}
 
-.carousel-button.next {
-  transform: rotate(180deg);
-}
+  &.next {
+    transform: rotate(180deg);
+  }
 
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
 }

@@ -1,0 +1,23 @@
+.traditions-section {
+  padding-top: 96px;
+
+  &__title {
+    margin-bottom: 42px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__content {
+    max-width: 710px;
+  }
+  &__photo {
+    border-radius: 400px 400px 0 0;
+  }
+  &__text {
+    &--limeted {
+      max-width: 335px;
+    }
+  }
+}
