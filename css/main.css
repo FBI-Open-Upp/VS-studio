@@ -3,7 +3,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -50,31 +50,31 @@ address {
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .visually-hidden {
   position: absolute;
@@ -115,8 +115,8 @@ address {
 .address-list,
 .address-info {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   gap: 20px;
 }
 
@@ -176,11 +176,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -189,13 +189,13 @@ address {
   border: 1px solid var(--color-primary-dark);
   fill: var(--color-primary-dark);
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
 }
 .carousel-button.next {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
@@ -216,8 +216,10 @@ address {
 }
 .chef-card__photo {
   border-radius: 4px 4px 4px 200px;
-  -webkit-box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-brand-brown);
-          box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-brand-brown);
+  -webkit-box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-brand-brown);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-brand-brown);
 }
 .chef-card__text {
   margin-bottom: 24px;
@@ -232,17 +234,29 @@ address {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   position: relative;
   height: 444px;
   border-radius: 16px;
   padding: 24px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(49, 38, 26, 0)), color-stop(72.92%, rgba(49, 38, 26, 0.71)), to(#31261a));
-  background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55.21%, rgba(49, 38, 26, 0)),
+    color-stop(72.92%, rgba(49, 38, 26, 0.71)),
+    to(#31261a)
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -269,7 +283,7 @@ address {
 }
 .format-card:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .input {
@@ -358,8 +372,8 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 40px;
 }
 .advantages-section__item {
@@ -370,10 +384,11 @@ address {
   margin: 0 auto 80px;
   position: relative;
 }
-.chefs-section__title::after, .chefs-section__title::before {
+.chefs-section__title::after,
+.chefs-section__title::before {
   width: 352px;
   border: 2px solid var(--color-brand-w-y);
-  content: "";
+  content: '';
   position: absolute;
   bottom: 24px;
 }
@@ -389,11 +404,11 @@ address {
   display: flex;
   gap: 40px 30px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .chefs-section__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .contacts-section {
@@ -418,7 +433,7 @@ address {
 }
 .contacts-section__map {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border: none;
   border-radius: 16px;
 }
@@ -438,7 +453,7 @@ address {
 
 .footer-section {
   background-color: var(--color-primary-dark);
-  background-image: url("../images/footer-bkg.png");
+  background-image: url('../images/footer-bkg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -448,21 +463,21 @@ address {
 
 .footer-section::after,
 .footer-section::before {
-  content: "";
+  content: '';
   position: absolute;
   background-repeat: no-repeat;
   bottom: 0;
 }
 
 .footer-section::after {
-  background-image: url("../images/decor-bread-large.png");
+  background-image: url('../images/decor-bread-large.png');
   width: 380px;
   height: 190px;
   right: 0;
 }
 
 .footer-section::before {
-  background-image: url("../images/decor-bread-smal.png");
+  background-image: url('../images/decor-bread-smal.png');
   width: 180px;
   height: 120px;
   left: 0;
@@ -477,7 +492,7 @@ address {
 .footer-nav,
 .footer-address {
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +502,8 @@ address {
 .footer-logo,
 .footer-menu {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .forms-terms {
@@ -513,8 +528,8 @@ address {
   display: flex;
   gap: 32px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .formats-section__list {
   display: -webkit-box;
@@ -522,11 +537,11 @@ address {
   display: flex;
   gap: 20px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .formats-section__item {
   -ms-flex-preferred-size: calc((100% - 40px) / 3);
-      flex-basis: calc((100% - 40px) / 3);
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .header {
@@ -541,8 +556,8 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 40px;
 }
 .header__nav {
@@ -550,11 +565,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 40px;
 }
 .header__menu {
@@ -563,11 +578,11 @@ address {
   display: flex;
   gap: 64px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .header-item {
   margin-right: 64px;
@@ -575,7 +590,13 @@ address {
 
 .hero-section {
   padding: 272px 0px;
-  background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-bkg.jpg");
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('../images/hero-bkg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -600,11 +621,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 20px 0;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
@@ -653,8 +674,8 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 40px;
 }
 .traditions-section__content {
@@ -697,4 +718,4 @@ address {
 } */
 /* .checkbox-input:checked + .checkbox-label::before {
   background-color: green;                           
-  } вместо цвета можно добавить картинку аля bkg-image: url('') *//*# sourceMappingURL=main.css.map */
+  } вместо цвета можно добавить картинку аля bkg-image: url('') */ /*# sourceMappingURL=main.css.map */
