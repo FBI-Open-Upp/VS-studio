@@ -1,3 +1,4 @@
+// CSS змінні
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -6,3 +7,9 @@
   --color-brand-brown: #a18268;
   --color-brand-w-y: #cfcfbc;
 }
+
+// SCSS Змінні
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1200px;
