@@ -1,4 +1,4 @@
-.footer-section {
+.footer {
   background-color: var(--color-primary-dark);
   background-image: url('../images/footer-bkg.png');
   background-repeat: no-repeat;
@@ -6,42 +6,90 @@
   background-size: cover;
   padding: 32px 0px;
   position: relative;
-}
 
-.footer-section::after,
-.footer-section::before {
-  content: '';
-  position: absolute;
-  background-repeat: no-repeat;
-  bottom: 0;
-}
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
 
-.footer-section::after {
-  background-image: url('../images/decor-bread-large.png');
-  width: 380px;
-  height: 190px;
-  right: 0;
-}
+  &::after {
+    background-image: url('../images/decor-bread-large.png');
+    width: 380px;
+    height: 190px;
+    right: 0;
+  }
 
-.footer-section::before {
-  background-image: url('../images/decor-bread-smal.png');
-  width: 180px;
-  height: 120px;
-  left: 0;
-}
+  &::before {
+    background-image: url('../images/decor-bread-smal.png');
+    width: 180px;
+    height: 120px;
+    left: 0;
+  }
 
-.footer-container {
-  display: flex;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
 
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
+  }
 
-.footer-logo,
-.footer-menu {
-  flex-grow: 1;
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__address {
+    &-list,
+    &-info {
+      flex-grow: 1;
+      gap: 20px;
+    }
+
+    &-link {
+      color: var(--color-primary-light);
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    &-link:hover {
+      color: var(--color-brand-light);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    &-copyright-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-brand-brown);
+      text-decoration: none;
+    }
+
+    &-icon {
+      fill: var(--color-primary-light);
+      cursor: pointer;
+    }
+
+    &-icon:hover {
+      fill: var(--color-brand-light);
+    }
+
+    &-info {
+    }
+  }
 }

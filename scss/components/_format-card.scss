@@ -12,7 +12,6 @@
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100%
   );
-  transition: transform 0.3s;
 
   &__title {
     color: var(--color-primary-light);
@@ -34,9 +33,5 @@
     height: 100%;
     border-radius: 16px;
     z-index: -1;
-  }
-
-  &:hover {
-    transform: scale(1.05);
   }
 }

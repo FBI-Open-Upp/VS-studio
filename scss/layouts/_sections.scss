@@ -1,5 +1,9 @@
 .section {
-  padding: 48px 0px;
+  padding: 20px 0px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0px;
+  }
 
   &__title {
     line-height: 1.5;

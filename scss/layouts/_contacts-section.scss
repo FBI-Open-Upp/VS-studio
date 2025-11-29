@@ -2,8 +2,14 @@
   padding-bottom: 96px;
 
   &__container {
+    flex-direction: column;
     display: flex;
-    gap: 32px;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__title {
@@ -21,8 +27,21 @@
   }
 
   &__map {
+    height: 176px;
+    margin: 0 -24px;
     flex-shrink: 0;
     border: none;
-    border-radius: 16px;
+    border-radius: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 320px;
+      height: 500px;
+      margin: auto;
+      border-radius: 16px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 596px;
+    }
   }
 }

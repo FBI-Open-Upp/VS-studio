@@ -14,10 +14,10 @@ body {
   line-height: 1.5;
   margin: 0%;
 
-  // @media screen and (min-width: $bp-tablet) {
-  //   font-size: 18px;
-  //   font-weight: 400;
-  // } // ERROR
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
@@ -28,6 +28,12 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+.img {
+  display: block;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 a {
